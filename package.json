@@ -1,6 +1,6 @@
 {
-  "homepage": "https://Elusiuve1593.github.io/todo",
-  "name": "todoList",
+  "homepage": "https://Elusiuve1593.github.io/todo-list",
+  "name": "todo-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
