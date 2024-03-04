@@ -27,9 +27,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "lint": "eslint src/",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "lint": "eslint src/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
