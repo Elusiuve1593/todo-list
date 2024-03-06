@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const AllButton = styled.button`
   cursor: pointer;
@@ -10,7 +10,7 @@ export const AllButton = styled.button`
   @media (max-width: 767.98px) {
     margin-bottom: 5px;
   }
-`;
+`
 
 export const CompletedButton = styled.button`
   cursor: pointer;
@@ -23,7 +23,7 @@ export const CompletedButton = styled.button`
   @media (max-width: 767.98px) {
     margin-bottom: 5px;
   }
-`;
+`
 
 export const UncompletedButton = styled.button`
   cursor: pointer;
@@ -32,7 +32,7 @@ export const UncompletedButton = styled.button`
   font-size: 16px;
   border-color: #ff7f50;
   background-color: #7f91a1;
-`;
+`
 
 export const ButtonContainer = styled.div`
   margin: 20px 0 0 5px;
@@ -42,4 +42,4 @@ export const ButtonContainer = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`;
+`

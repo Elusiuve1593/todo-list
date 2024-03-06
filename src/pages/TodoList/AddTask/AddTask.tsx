@@ -1,43 +1,43 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addTaskThunk } from "../../../redux/todo/operations";
-import { AppDispatch } from "../../../redux/store";
-import toast from "react-hot-toast";
-import { CiSquarePlus } from "react-icons/ci";
+import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { addTaskThunk } from "../../../redux/todo/operations"
+import { AppDispatch } from "../../../redux/store"
+import toast from "react-hot-toast"
+import { CiSquarePlus } from "react-icons/ci"
 import {
   AddTaskContainer,
   Button,
   Input,
   Line,
   TaskContainer,
-} from "./AddTask.styled";
+} from "./AddTask.styled"
 
-export const AddTask = () => {
-  const dispatch: AppDispatch = useDispatch();
+export const AddTask = ():JSX.Element => {
+  const dispatch: AppDispatch = useDispatch()
 
-  const [titleValue, setTitleValue] = useState<string>("");
+  const [titleValue, setTitleValue] = useState<string>("")
 
-  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTitleValue(event.currentTarget.value);
-  };
+  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    setTitleValue(event.currentTarget.value)
+  }
 
-  const addTaskHandler = () => {
+  const addTaskHandler = (): string | undefined => {
     if (!titleValue) {
-      return toast("Put a message, please");
+      return toast("Put a message, please")
     }
     const value = {
       id: Date.now(),
       title: titleValue,
       completed: false,
-    };
-    dispatch(addTaskThunk(value));
-    setTitleValue("");
-  };
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === "Enter") {
-      addTaskHandler();
     }
-  };
+    dispatch(addTaskThunk(value))
+    setTitleValue("")
+  }
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>):void => {
+    if (event.key === "Enter") {
+      addTaskHandler()
+    }
+  }
   return (
     <AddTaskContainer>
       <TaskContainer>
@@ -55,5 +55,5 @@ export const AddTask = () => {
         <Line />
       </TaskContainer>
     </AddTaskContainer>
-  );
-};
+  )
+}

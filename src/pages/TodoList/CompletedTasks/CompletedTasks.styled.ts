@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 interface NumberProps {
-  isZero: boolean;
+  isZero: boolean
 }
 
 export const Task = styled.div`
@@ -12,14 +12,14 @@ export const Task = styled.div`
   @media (max-width: 767.98px) {
     font-size: 19.1px;
   }
-`;
+`
 
 export const Number = styled.span<NumberProps>`
-  color: ${(props) => (props.isZero ? "###" : "green")};
-  font-weight: ${(props) => (props.isZero ? 400 : 500)};
+  color: ${(props):string => props.isZero ? "###" : "green"};
+  font-weight: ${(props): number => props.isZero ? 400 : 500};
   font-size: 21px;
-`;
+`
 
 export const CompletedTaskContainer = styled.div`
   margin: 10px;
-`;
+`

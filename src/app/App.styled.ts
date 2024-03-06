@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -6,11 +6,11 @@ export const Wrapper = styled.div`
   overflow: hidden;
   min-height: 100vh;
   background-color: #FFFACD;
-`;
+`
 
 export const Main = styled.div`
   flex: 1 1 auto;
-`;
+`
 
 export const Container = styled.div`
   max-width: 1300px;
@@ -28,4 +28,4 @@ export const Container = styled.div`
     max-width: none;
     margin: 0px 15px;
   }
-`;
+`

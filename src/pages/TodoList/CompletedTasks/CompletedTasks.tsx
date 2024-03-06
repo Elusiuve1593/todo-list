@@ -1,11 +1,11 @@
-import { useSelector } from "react-redux";
-import { fetchTodo } from "../../../redux/todo/selector";
-import { CompletedTaskContainer, Number, Task } from "./CompletedTasks.styled";
+import { useSelector } from "react-redux"
+import { fetchTodo } from "../../../redux/todo/selector"
+import { CompletedTaskContainer, Number, Task } from "./CompletedTasks.styled"
 
-export const CompletedTasks = () => {
+export const CompletedTasks = (): JSX.Element => {
   const countCompletedTasks = useSelector(fetchTodo).todos.filter(
     ({ completed }) => completed
-  );
+  )
 
   return (
     <CompletedTaskContainer>
@@ -14,5 +14,5 @@ export const CompletedTasks = () => {
         {countCompletedTasks.length}
       </Number>
     </CompletedTaskContainer>
-  );
-};
+  )
+}

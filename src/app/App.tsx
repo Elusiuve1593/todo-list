@@ -1,7 +1,7 @@
-import { Todo } from "../pages/TodoList/Todo";
-import { Container, Main, Wrapper } from "./App.styled";
+import { Todo } from "../pages/TodoList/Todo"
+import { Container, Main, Wrapper } from "./App.styled"
 
-export const App = () => {
+export const App = (): JSX.Element => {
   return (
     <Wrapper>
       <Main>
@@ -10,5 +10,5 @@ export const App = () => {
         </Container>
       </Main>
     </Wrapper>
-  );
-};
+  )
+}

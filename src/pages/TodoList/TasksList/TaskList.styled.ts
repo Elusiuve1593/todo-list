@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 interface TitleProps {
-  isCompleted?: boolean;
+  isCompleted?: boolean
 }
 
 export const TaskListContainer = styled.div`
   padding: 10px;
   margin-bottom: 10px;
-`;
+`
 
 export const TasksContainer = styled.div`
   display: flex;
@@ -16,13 +16,13 @@ export const TasksContainer = styled.div`
   @media (max-width: 450px) {
     height: 30%;
   }
-`;
+`
 
 export const CheckBox = styled.input`
   padding: 20px;
   cursor: pointer;
   transform: scale(1.4);
-`;
+`
 
 export const EditInput = styled.input`
   font-size: 15px;
@@ -32,12 +32,12 @@ export const EditInput = styled.input`
   @media (max-width: 450px) {
     max-width: 118px;
   }
-`;
+`
 
 export const Title = styled.div<TitleProps>`
-  color: ${(props) => (props.isCompleted ? "#808080" : "#000")};
+  color: ${(props): string => props.isCompleted ? "#808080" : "#000"};
   padding: 15px;
-`;
+`
 
 export const EditButton = styled.button`
   cursor: pointer;
@@ -45,11 +45,11 @@ export const EditButton = styled.button`
   background-color: transparent;
   outline: none;
   margin-right: 8px;
-`;
+`
 
 export const DeleteButton = styled.button`
   cursor: pointer;
   border: none;
   background-color: transparent;
   outline: none;
-`;
+`
